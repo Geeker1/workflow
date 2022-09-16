@@ -1,0 +1,15 @@
+name: zeus
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  run:
+    name: Run
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Test echo command
+      run: echo "Workflowed"
