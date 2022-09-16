@@ -2,7 +2,7 @@ name: zeus
 on:
   pull_request:
     branches:
-      - main
+      - master
 jobs:
   run:
     name: Run
